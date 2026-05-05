@@ -2,6 +2,7 @@
 using Dsw2026Ej8.ej02;
 using Dsw2026Ej8.ej03;
 using Dsw2026Ej8.ej04;
+using Dsw2026Ej8.ej05;
 
 namespace Dsw2026Ej8
 {
@@ -32,7 +33,17 @@ namespace Dsw2026Ej8
             Console.WriteLine(problema4.CalcularPromedio(10, null, 9));
             Console.WriteLine(problema4.CalcularPromedio(null, 0, 5));
 
-          
+            Console.WriteLine("\n----- PRUEBAS EJ 05 -----\n");
+            Sale s1 = new RetailSale("camisa", 20.50M, 5);
+            Console.WriteLine(Problema5.ObtenerImporteFinal(s1));
+            Sale s2 = new WholesaleSale("pantalon", 105.60M, 1);
+            Console.WriteLine(Problema5.ObtenerImporteFinal(s2));
+            Sale s3 = new WholesaleSale("medias", 10M, 5);
+            Console.WriteLine(Problema5.ObtenerImporteFinal(s3));
+            Sale s4 = new RetailSale("short", 200M, 2);
+            Console.WriteLine(Problema5.ObtenerImporteFinal(s4));
+
+            
 
 
         }
