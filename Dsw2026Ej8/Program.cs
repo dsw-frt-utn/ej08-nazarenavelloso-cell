@@ -3,6 +3,7 @@ using Dsw2026Ej8.ej02;
 using Dsw2026Ej8.ej03;
 using Dsw2026Ej8.ej04;
 using Dsw2026Ej8.ej05;
+using Dsw2026Ej8.ej06;
 
 namespace Dsw2026Ej8
 {
@@ -43,8 +44,9 @@ namespace Dsw2026Ej8
             Sale s4 = new RetailSale("short", 200M, 2);
             Console.WriteLine(Problema5.ObtenerImporteFinal(s4));
 
-            
-
+            Console.WriteLine("\n----- PRUEBAS EJ 06 -----\n");
+            Console.WriteLine(Problema6.NormalizarCodigoProducto("abc 123 x"));
+            Console.WriteLine(Problema6.NormalizarCodigoProducto(null));
 
         }
     }
